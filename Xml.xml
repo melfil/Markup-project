@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XmlSchema.xsd">
+    <device>
+        <sounds>
+            <volume>100%</volume>
+            <ringtone>Titanic theme</ringtone>
+            <message>Bell</message> 
+            <alarm>Good morning</alarm>
+            <vibrate>Long vibration</vibrate>          
+        </sounds>
+        <display>
+            <brightness>50%</brightness>
+            <wallpaper>Forest</wallpaper>
+            <theme>Dark</theme>
+            <font>Arial</font>
+            <screensaver>30seconds</screensaver>
+        </display>
+        <memory>
+            <sd>
+                <total>64GB</total>
+                <available>17GB</available>
+                <used>47GB</used>
+            </sd>
+            <internal>
+                <total>32GB</total>
+                <available>25GB</available>
+                <used>7GB</used>
+            </internal>
+        </memory>            
+    </device>
+    
+    <personal>
+        <apps ida="a1">
+            <title>Spotify</title>
+            <size>1.9GB</size>
+            <location>SD memory</location>
+            <installedon>02-10-2016</installedon>
+        </apps>
+        <apps ida="a2">
+            <title>Gmail</title>
+            <size>344MB</size>
+            <location>Internal memory</location>
+            <installedon>16-04-2015</installedon>           
+        </apps>
+        <apps ida="a3">
+            <title>Maps</title>
+            <size>342MB</size>
+            <location>Internal memory</location>
+            <installedon>22-01-2017</installedon>
+        </apps>
+        <users idu="us1">
+            <account>asdf@gmail.com</account>
+            <name>Melina</name>
+            <lastlog>25-4-17</lastlog>            
+        </users>
+        <users idu="us2">
+            <account>qwerty@gmail.com</account>
+            <name>Guest</name>
+            <lastlog>10-4-17</lastlog>            
+        </users>
+        <privacy>
+                <simpassword activesim="yes">658198</simpassword> 
+                <lockscreen activelock="yes">123456</lockscreen>            
+        </privacy>       
+    </personal>
+    
+    <system>
+        <date dt="24-4-17">
+            <formd>dd-mm-yy</formd>
+        </date>
+        <time tm="10:37">           
+            <formt>am</formt>
+        </time>        
+        <language>
+            <phone>English</phone>
+            <keyboard>English</keyboard>
+        </language>
+        <about>
+            <brand model= "Galaxy S5" cpu="Qualcomm MSM8974AC Snapdragon 801" gpu="Adreno 330" ram="2GB">Samsung</brand>  
+            <osversion>Android Marsmallow</osversion>
+            <status>
+                <battery>60%</battery>
+                <mnumber>00420456823579</mnumber>               
+                <screensize>5 inches</screensize>
+                <network>4G</network>
+                <imei>023154983205780</imei>
+            </status>
+        </about>
+    </system>
+</settings>

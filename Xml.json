@@ -1,0 +1,121 @@
+
+        [
+         
+            {
+            "Sounds":{
+            "Volume": "100%",
+            "Ringtone": "Titanic theme",
+            "Message": "Bell",
+            "Alarm": "Good morning",
+            "Vibrate": "Long vibration"}
+            },
+            {
+            "Display":{
+            "Brightness": "50%",
+            "Wallpaper": "Forest",
+            "Theme": "Dark",
+            "Font": "Arial",
+            "Screensaver": "30seconds"}
+            },
+            {
+            "Memory SD":{
+            "Total": "64GB",
+            "Available": "17GB",
+            "Used": "47GB"}
+            },
+            {
+            "Memory Internal":{
+            "Total": "32GB",
+            "Available": "25GB",
+            "Used": "7GB"}
+            },
+        
+            {
+            "Personal":{
+            "Apps":[
+                {"ID app": "a1",
+                "Title": "Spotify",
+                "Size": "1.9GB",
+                "Location": "SD memory",
+                "Installed on": "02-10-2016"
+                },
+                {"ID app": "a2",
+                "Title": "Gmail",
+                "Size": "344MB",
+                "Location": "Internal memory",
+                "Installed on": "16-04-2015"
+                },
+                {"ID app": "a3",
+                "Title": "Maps",
+                "Size": "342MB",
+                "Location": "Internal memory",
+                "Installed on": "22-01-2017"
+                }]}},
+            {
+            "Users":[
+                {"ID user": "us1",
+                "Account": "asdf@gmail.com",
+                "Name": "Melina",
+                "Last log": "25-4-17"
+                },
+                {"ID user": "us2",
+                "Account": "qwerty@gmail.com",
+                "Name": "Guest",
+                "Last log": "10-4-17"
+                }]},
+            {
+            "Privacy":{
+            "Active sim password":"yes",
+            "Sim password": "658198",
+            "Active lockscreen password": "yes",
+            "Lockscreen": "123456"
+            }},                
+            
+        
+            {
+            "Date":"24-4-17",
+            "Form": "dd-mm-yy"
+            },
+            {
+            "Time":"10:37",
+            "Form": "am"
+            },
+            
+            {
+            "Language":{
+            "Phone": "English",
+            "Keyboard": "English"}
+            },
+          
+           
+            { 
+            "About":{
+            "Brand": "Samsung",
+            "Model": "Galaxy S5",
+            "CPU": "Qualcomm MSM8974AC Snapdragon 801",
+            "GPU": "Adreno 330",
+            "RAM": "2GB",            
+            "Operating system": "Android Marsmallow",
+            
+            "Status":{
+            "Battery": "60%",
+            "Mobile number": "00420456823579",
+            "Screensize": "5 inches",
+            "Network": "4G",
+            "IMEI number": "023154983205780"}
+            
+            }
+            }
+                
+        
+            
+        
+            
+            
+           
+            
+        
+        
+        
+        ]
+    

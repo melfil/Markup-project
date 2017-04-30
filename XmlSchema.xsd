@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    
+    
+    
+    <xs:complexType name="lockscreen">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="activelock" type="xs:string"/>            
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="sounds">
+        <xs:sequence>
+            <xs:element name="volume" type="xs:string"/>
+            <xs:element name="ringtone" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+            <xs:element name="alarm" type="xs:string"/>
+            <xs:element name="vibrate" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="display">
+        <xs:sequence>
+            <xs:element name="brightness" type="xs:string"/>
+            <xs:element name="wallpaper" type="xs:string"/>
+            <xs:element name="theme" type="xs:string"/>
+            <xs:element name="font" type="xs:string"/>
+            <xs:element name="screensaver" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="sd">
+        <xs:sequence>
+            <xs:element name="total" type="xs:string"/>
+            <xs:element name="available" type="xs:string"/>
+            <xs:element name="used" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>  
+    
+    <xs:complexType name="memory">
+        <xs:sequence>
+            <xs:element name="sd" type="sd"/>
+            <xs:element name="internal" type="sd"/>           
+        </xs:sequence>       
+    </xs:complexType>
+    
+    <xs:complexType name="device">
+        <xs:sequence>
+            <xs:element name="sounds" type="sounds"/>
+            <xs:element name="display" type="display"/>
+            <xs:element name="memory" type="memory"/>
+        </xs:sequence>
+    </xs:complexType>
+   
+     
+    <xs:complexType name="apps">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="size" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="installedon" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="ida" type="xs:ID"/> 
+    </xs:complexType>
+    
+    <xs:complexType name="users">
+        <xs:sequence>
+            <xs:element name="account" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="lastlog" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="idu" type="xs:ID"/> 
+    </xs:complexType>
+        
+    <xs:complexType name="privacy">
+        <xs:sequence>
+            <xs:element name="simpassword">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="activesim" type="xs:string"/>            
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="lockscreen">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="activelock" type="xs:string"/>            
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personal">
+        <xs:sequence>
+            <xs:element name="apps" type="apps" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="users" type="users" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="privacy" type="privacy"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="date">
+        <xs:sequence>
+            <xs:element name="formd" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="dt" type="xs:string"/> 
+    </xs:complexType>
+    <xs:complexType name="time">
+        <xs:sequence>
+            <xs:element name="formt" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="tm" type="xs:string"/> 
+    </xs:complexType>
+    
+    <xs:complexType name="language">
+        <xs:sequence>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="keyboard" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="status">
+        <xs:sequence>
+            <xs:element name="battery" type="xs:string"/>
+            <xs:element name="mnumber" type="xs:integer"/>            
+            <xs:element name="screensize" type="xs:string"/>            
+            <xs:element name="network" type="xs:string"/>
+            <xs:element name="imei" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="about">
+        <xs:sequence>
+            <xs:element name="brand">
+            <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="model" type="xs:string"/>
+                            <xs:attribute name="cpu" type="xs:string"/>
+                            <xs:attribute name="gpu" type="xs:string"/>
+                            <xs:attribute name="ram" type="xs:string"/>                                        
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>            
+            </xs:element>
+            <xs:element name="osversion" type="xs:string"/>
+            <xs:element name="status" type="status"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="system">
+        <xs:sequence>
+            <xs:element name="date" type="date"/>
+            <xs:element name="time" type="time"/>
+            <xs:element name="language" type="language"/>
+            <xs:element name="about" type="about"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="settings">
+        <xs:sequence>
+            <xs:element name="device" type="device"/>
+            <xs:element name="personal" type="personal"/>
+            <xs:element name="system" type="system"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="settings" type="settings"/>
+    
+    
+</xs:schema>
