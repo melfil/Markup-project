@@ -2,11 +2,141 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Markup Project</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Documentation of a mobile's settings layout</h1>
+        </header>
+        <nav>               
+            <h3>Table of contents</h3>
+            <ol>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#method">Methodology</a></li>
+                <li><a href="#work">Work content</a></li>
+                <li><a href="#elem">Elements description</a></li>
+                <li><a href="#trans">Transformation desription</a></li>
+                <li><a href="#concl">Conclusion</a></li>
+                <li><a href="#git">Github repository</a></li>
+            </ol>
+        </nav>       
+        <hr>
+        <main>
+            <article>
+                <section>
+                    <h2 id="intro">Introduction</h2>
+                    <p>This is the documentation of an xml project, that presents a layout of a mobile's device settings page.<br>
+                        The tabs and contents that consist this settings page are based on a mobile device and are not a 
+                        representation of the real layout.</p>          
+                </section>
+                <br>
+                <section>
+                    <h2 id="method">Methodology</h2>
+                    <p>Project was made with NetBeans IDE 8.2. <br>
+                        The presentation of JSON output was made with Google Chrome browser<br>
+                        and lastly Github platform was used for the submission of the project.<br>
+                        Project implemented with XML, XMLSchema, XSLT and JSON.
+                    </p>                  
+                </section>
+                <br>
+                <section>
+                    <h2 id="work">Work content</h2>
+                    <p>Here we analyze the content of each file. </p>
+
+                    <table border="1">
+                        <tr>
+                            <th>Content</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>XML.xml</td>
+                            <td>XML file is the first file that starts the making of the settings layout. Here are located all the components that give layout his shape. </td>
+                        </tr>
+                        <tr>
+                            <td>XMLSchema.xsd</td>
+                            <td>XML Schema describes and validates the correctness of XML's components. </td>
+                        </tr>
+                        <tr>
+                            <td>XSLT.xsl</td>
+                            <td>XSLT is used for the transformation of XML file to JSON.</td>
+                        </tr>
+                        <tr>
+                            <td>JSON.json</td>
+                            <td>JSON format is chosen to be used as an output of the transformation of XML.</td>
+                        </tr>
+                    </table>                    
+                </section>
+                <br>
+                <section>
+                    <h2 id="elem">Elements description</h2>
+                    <p>
+                    <ul>
+                        <li>Main element of our layout is "Settings", that contains all components.</li>
+                        <li>Layout is splitted into three main subelements about "Device", "Personal" and "System" settings.<br>
+                            "Device" tag has settings about:</li>
+                        <ul>
+                            <li>"Sounds"</li>
+                            <li>"Display"</li>
+                            <li>"Memory"</li>
+                            <i> Some of the elements inside</i> "Sounds" element are volume,ringtone,message,alarm and vibrate.<br>
+                            <i> Some of the elements inside</i> "Display" element are brightness,wallpaper,theme,font and screensaver.<br>
+                            <i> Some of the elements inside</i> "Memory" element are sd and internal.                           
+                        </ul>
+                        <li>"Personal" tag has settings about:</li>
+                        <ul>
+                            <li>"Apps"</li>
+                            <li>"Users"</li>
+                            <li>"Privacy"</li>
+                            "Apps" element contains <u> three records</u> splitted with ID. <i> Subelements</i> are title,size,location and installedon.<br>
+                            "Users" element contains <u> two records</u> splitted with ID. <i> Subelements</i> are account,name and lastlog.<br>
+                            <i> Some of the elements inside</i> "Privacy" element are simpassword and lockscreen that contain <u> attributes</u> activesim and activelock.                           
+                        </ul>
+                        <li>"System" tag has settings about:</li>
+                        <ul>
+                            <li>"Date"</li>
+                            <li>"Time"</li>
+                            <li>"Language"</li>
+                            <li>"About"</li>
+                            "Date" element contains <u>attribute</u> dt.<i> Subelement</i> is formd.<br>
+                            "Time" element contains <u>attribute</u> tm.<i> Subelement</i> is formt.<br>
+                            <i> Some of the elements inside</i> "Language" element are phone and keyboard.<br>                           
+                            <i> Some of the elements inside</i> "About" element are brand (that contains <u>attributes</u> model,cpu,gpu and ram)s,osversion and status.<br>
+                            <i> Some of the elements inside</i> "Status" element are battery,mnumber,screensize,network and imei.<br>                            
+                        </ul>
+                    </ul>
+                    </p>                   
+                </section>
+                <br>
+                <section>
+                    <h2 id="trans">Transformation description</h2>
+                    <p><ul>
+                        <li>XML transformation into XMLSchema.</li>
+                        Description of XML components to xsd and validation. 
+                        <li>XML transformation into the XSLT file and production of JSON output.</li>
+                    </ul>
+                    </p>
+                </section>
+                <br>
+                <section>
+                    <h2 id="concl">Conclusion</h2>
+                    <p>That was the documentation of the production of a mobile settings page. All documents are on Github repository.</p>                    
+                </section>
+                <section>
+                    <h2 id="git">Github repository link</h2>
+                    <p>https://github.com/melfil/Markup-project </p>                    
+                </section>
+                <hr>
+                <footer>
+                    <p>This project was made by <strong>Melina&nbsp;Maria&nbsp;Filippidou</strong> for Markup Languages course.</p>
+                </footer>
+            </article>
+        </main>
+        <footer>
+            Copyright &copy;
+            <p style="font-size:40px" align="right"><a href="Html.html"><b>Up</b></a></p>
+        </footer>
     </body>
-</html>
+</html> 
+
